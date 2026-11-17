@@ -1,1 +1,93 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>DEDI SUTAYAT - @dedisutayat</title>
+<style>
+  *{margin:0!important;padding:0!important;box-sizing:border-box!important;font-family:'Segoe UI', Arial, sans-serif!important}
+  html,body{width:100%!important;overflow-x:hidden!important}
+  body{background:#FFD21F!important;background:linear-gradient(180deg,#FFD21F 0%, #FFC700 100%)!important;min-height:100vh!important;display:flex!important;justify-content:center!important;align-items:flex-start!important}
+  .page{width:100%!important;max-width:520px!important;margin:0 auto!important;padding:20px 14px 40px!important;position:relative!important;text-align:center!important}
+  .cloud{position:absolute!important;background:#fff!important;border-radius:50px!important;opacity:.95!important;z-index:0!important;pointer-events:none!important}
+  .cloud:before,.cloud:after{content:''!important;position:absolute!important;background:#fff!important;border-radius:50%!important}
+  .cloud.blue{background:#8ECDF5!important}
+  .cloud.blue:before,.cloud.blue:after{background:#8ECDF5!important}
+  .c1{width:110px!important;height:34px!important;top:45px!important;left:0!important}
+  .c1:before{width:50px!important;height:50px!important;top:-22px!important;left:14px!important}
+  .c1:after{width:34px!important;height:34px!important;top:-14px!important;left:52px!important}
+  .c2{width:130px!important;height:38px!important;top:12px!important;right:0!important}
+  .c2:before{width:60px!important;height:60px!important;top:-28px!important;left:20px!important}
+  .c2:after{width:40px!important;height:40px!important;top:-16px!important;left:66px!important}
+  .c3{width:100px!important;height:30px!important;top:180px!important;left:18%!important}
+  .c3:before{width:44px!important;height:44px!important;top:-20px!important;left:12px!important}
+  .c4{width:120px!important;height:36px!important;top:210px!important;right:2%!important}
+  .c4:before{width:55px!important;height:55px!important;top:-24px!important;left:18px!important}
+  .c5{width:110px!important;height:32px!important;top:330px!important;left:0!important}
+  .c5:before{width:48px!important;height:48px!important;top:-20px!important;left:14px!important}
+  .c6{width:100px!important;height:30px!important;top:480px!important;right:0!important}
+  .c6:before{width:42px!important;height:42px!important;top:-18px!important;left:14px!important}
+  .c7{width:110px!important;height:32px!important;top:680px!important;left:0!important}
+  .c7:before{width:46px!important;height:46px!important;top:-20px!important;left:14px!important}
+  .c8{width:130px!important;height:36px!important;bottom:0!important;left:0!important}
+  .c8:before{width:56px!important;height:56px!important;top:-24px!important;left:20px!important}
+  .c9{width:130px!important;height:36px!important;bottom:0!important;right:0!important}
+  .c9:before{width:56px!important;height:56px!important;top:-24px!important;left:20px!important}
+  .wrap{max-width:520px!important;margin:0 auto!important;position:relative!important;z-index:2!important;text-align:center!important;width:100%!important}
+  .domain{color:#0A1A7A!important;font-weight:900!important;font-size:clamp(22px,6vw,28px)!important;margin-bottom:12px!important;text-align:center!important}
+  .hero{width:100%!important;aspect-ratio:3/4!important;height:auto!important;min-height:500px!important;border-radius:28px!important;border:5px solid #fff!important;box-shadow:0 12px 28px rgba(0,0,0,.22)!important;overflow:hidden!important;position:relative!important;background-color:#ddd!important;background-image:url('https://dedisutayat.web.id/wp-content/uploads/2026/11/IMG_20260729_125115.jpg')!important;background-size:cover!important;background-position:center center!important;background-repeat:no-repeat!important;display:flex!important;align-items:flex-end!important;justify-content:center!important}
+  .hero-overlay{width:100%!important;padding:60px 14px 20px!important;background:linear-gradient(180deg, transparent 0%, rgba(0,0,0,.15) 30%, rgba(0,0,0,.75) 100%)!important;text-align:center!important}
+  .hero h1{font-size:clamp(30px,8vw,38px)!important;line-height:1.05!important;color:#fff!important;font-weight:900!important;letter-spacing:2px!important;text-shadow:0 2px 10px rgba(0,0,0,.6)!important;margin:0!important;text-align:center!important}
+  .user{color:#0A5BC7!important;font-size:clamp(22px,6vw,30px)!important;font-weight:800!important;margin:14px 0 16px!important;text-align:center!important}
+  .bio{background:linear-gradient(180deg,#FFE98A,#FFD93B)!important;border-radius:28px!important;padding:18px 16px!important;font-size:14.5px!important;line-height:1.55!important;color:#111!important;font-weight:600!important;box-shadow:0 0 0 4px rgba(255,255,255,.25)!important;text-align:center!important;width:100%!important}
+  .shopee-wrap{margin:18px 0 4px!important;width:100%!important}
+  .shopee-title{color:#0A1A7A!important;font-size:clamp(20px,5.5vw,24px)!important;font-weight:900!important;margin-bottom:12px!important;text-align:center!important}
+  .shopee-btn{display:flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;width:100%!important;background:linear-gradient(135deg,#FF6A00 0%, #EE4D2D 100%)!important;color:#fff!important;text-decoration:none!important;padding:18px 16px!important;border-radius:24px!important;font-weight:900!important;font-size:clamp(17px,5vw,20px)!important;box-shadow:0 8px 18px rgba(238,77,45,.45), 0 0 0 4px rgba(255,255,255,.6)!important;text-align:center!important;animation:pulse 1.8s infinite!important}
+  @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+  .shopee-note{font-size:12px!important;color:#0A1A7A!important;font-weight:700!important;opacity:.85!important;margin-top:8px!important;text-align:center!important}
+  .title{margin:22px 0 16px!important;color:#0A1A7A!important;font-size:clamp(20px,5.5vw,24px)!important;font-weight:900!important;text-align:center!important}
+  .grid{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:12px!important;width:100%!important}
+  .btn{display:flex!important;align-items:center!important;gap:7px!important;background:linear-gradient(135deg,#00C2FF 0%, #5B6CFF 35%, #A86CFF 65%, #E86CFF 100%)!important;color:#fff!important;text-decoration:none!important;padding:16px 8px!important;border-radius:22px!important;font-weight:800!important;font-size:14px!important;box-shadow:0 6px 14px rgba(0,0,0,.18)!important;text-align:left!important;justify-content:flex-start!important;min-width:0!important;overflow:hidden!important}
+  .btn img{width:26px!important;height:26px!important;border-radius:6px!important;object-fit:cover!important;flex-shrink:0!important;background:#fff!important}
+  .btn .icon{width:26px!important;height:26px!important;border-radius:6px!important;background:#fff!important;color:#111!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:17px!important;font-weight:900!important;flex-shrink:0!important}
+  .footer{margin-top:26px!important;color:#0A1A7A!important;font-size:12px!important;font-weight:700!important;opacity:.8!important;text-align:center!important}
+  @media(max-width:420px){.page{padding:16px 10px 30px!important}.hero{border-radius:24px!important}.grid{gap:8px!important}.btn{font-size:11.5px!important;padding:13px 6px!important;gap:5px!important}.btn img,.btn .icon{width:21px!important;height:21px!important;font-size:13px!important}}
+  @media(min-width:768px){.page{max-width:560px!important}}
+</style>
 
+<div class="page">
+<div class="cloud c1 blue"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4 blue"></div><div class="cloud c5 blue"></div><div class="cloud c6"></div><div class="cloud c7 blue"></div><div class="cloud c8 blue"></div><div class="cloud c9"></div>
+<div class="wrap">
+  <div class="domain">dedisutayat.web.id</div>
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>DEDI SUTAYAT</h1>
+    </div>
+  </div>
+  <div class="user">@dedisutayat</div>
+  <div class="bio">Hi, saya Dedi Sutayat, saya adalah seorang figur publik conten creator asal, Cilacap Jawa Tengah Indonesia, yang di kenal melalui berbagai latar belakang pekerjaan, termasuk sebagai penyiar radio (announcer) dan music direction (MD) serta aktif dalam kegiatan sosial dan pendampingan. Saya adalah penggemar teknologi, seni dan pemrograman, saya juga tertarik ada pengembangan web dan berkebun, anda bisa mengunjungi semua sosial media saya di bawah:</div>
+
+  <div class="shopee-wrap">
+    <div class="shopee-title">🎁 Ada Kejutan Buat Kamu</div>
+    <a class="shopee-btn" href="https://collshp.com/dedisutayat" target="_blank" rel="noopener sponsored nofollow">👉 Klik Di Sini, Jangan Sampai Ketinggalan</a>
+    <div class="shopee-note">99% yang udah klik langsung nyesel baru tau sekarang</div>
+  </div>
+
+  <div class="title">Kunjungi Sosial Media Saya</div>
+  <div class="grid">
+    <a class="btn" href="https://m.facebook.com/dedisutayat.real" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt=""> Facebook</a>
+    <a class="btn" href="https://instagram.com/dedisutayat" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt=""> Instagram</a>
+    <a class="btn" href="https://www.linkedin.com/in/dedi-sutayat/" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt=""> LinkedIn</a>
+    <a class="btn" href="https://tiktok.com/@lochott" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/tiktok/000000" alt=""> TikTok</a>
+    <a class="btn" href="https://www.threads.com/@dedisutayat" target="_blank" rel="noopener"><span class="icon">@</span> Threads</a>
+    <a class="btn" href="https://youtube.com/@dedisutayat" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/youtube/FF0000" alt=""> YouTube</a>
+    <a class="btn" href="https://dedisutayat.wordpress.com/" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt=""> WordPress</a>
+    <a class="btn" href="https://www.tumblr.com/dedisutayat" target="_blank" rel="noopener"><span class="icon">t</span> Tumblr</a>
+    <a class="btn" href="https://m.soundcloud.com/lochot" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/soundcloud/FF3300" alt=""> SoundCloud</a>
+    <a class="btn" href="https://open.spotify.com/intl-id/artist/3NQFrrMEAVt9m4IgKyobm4" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/spotify/1DB954" alt=""> Spotify</a>
+    <a class="btn" href="https://id.pinterest.com/dedisutayatnew/" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/pinterest/E60023" alt=""> Pinterest</a>
+    <a class="btn" href="https://medium.com/@dedisutayat" target="_blank" rel="noopener"><span class="icon">M</span> Medium</a>
+    <a class="btn" href="https://discord.com/users/545408580203970580" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/discord/5865F2" alt=""> Discord</a>
+    <a class="btn" href="https://dedisutayat.github.io/" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/000000" alt=""> GitHub</a>
+    <a class="btn" href="https://www.flickr.com/people/dedisutayat/" target="_blank" rel="noopener"><span class="icon" style="color:#0063DC">F</span> Flickr</a>
+  </div>
+  <div class="footer">© 2026 • dedisutayat.web.id • Made with ♥ in Cilacap</div>
+</div>
+</div>
